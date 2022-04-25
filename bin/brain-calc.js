@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import askName from '../src/cli.js';
+import calc from '../games/calculate-game.js';
 
 console.log('Welcome to the Brain Games!');
-console.log(askName());
+calc();
