@@ -6,7 +6,7 @@ import askName from '../src/cli.js';
 const getRandomNumber = (min, max) => Math.trunc(Math.random() * (max - min) + min);
 const operators = ['*', '+', '-'];
 const getRandomOperator = () => {
-  const i = getRandomNumber(0, 2);
+  const i = getRandomNumber(0, 3);
   return operators[i];
 };
 
