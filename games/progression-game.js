@@ -1,6 +1,4 @@
 /* eslint-disable max-len */
-/* eslint-disable no-param-reassign */
-/* eslint-disable no-return-assign */
 import askName from '../src/cli.js';
 import {
   getRandomNumber, greetingsAsk, getUserAnswer, checkCorrectAnswer, makeSequenceArray, fullSequenceArray,
@@ -25,7 +23,7 @@ function progression() {
       }
       return result;
     };
-    console.log(makeSequenceString());
+    console.log(`Question: ${makeSequenceString()}`);
     const fullArr = fullSequenceArray(startNumber, stepSize, chainLength);
     const correctAnswer = fullArr[stepSkip];
     const userAnswer = getUserAnswer();

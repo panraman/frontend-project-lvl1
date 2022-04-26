@@ -1,6 +1,3 @@
-/* eslint-disable no-unused-expressions */
-/* eslint-disable no-unreachable-loop */
-
 import askName from '../src/cli.js';
 import {
   getRandomNumber, greetingsAsk, isEven, getUserAnswer, checkCorrectAnswer,

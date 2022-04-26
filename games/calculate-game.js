@@ -1,4 +1,3 @@
-/* eslint-disable no-unreachable-loop */
 /* eslint-disable no-eval */
 import askName from '../src/cli.js';
 import {
