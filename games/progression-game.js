@@ -1,4 +1,5 @@
 /* eslint-disable max-len */
+
 import askName from '../src/cli.js';
 import {
   getRandomNumber, greetingsAsk, getUserAnswer, checkCorrectAnswer, makeSequenceArray, fullSequenceArray,
