@@ -23,7 +23,7 @@ function progression() {
       }
       return result;
     };
-    console.log(`Question: ${makeSequenceString()}`);
+    console.log(`Question:${makeSequenceString()}`);
     const fullArr = fullSequenceArray(startNumber, stepSize, chainLength);
     const correctAnswer = fullArr[stepSkip];
     const userAnswer = getUserAnswer();
