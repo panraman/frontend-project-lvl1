@@ -6,5 +6,3 @@ publish: # выполнение publish --dry-run
 		npm publish --dry-run
 lint: # проверка линтёром
 		npx eslint .
-brain-calc: # запуск игры в калькулятор
-		node bin/brain-calc.js
