@@ -1,4 +1,5 @@
 /* eslint-disable no-eval */
+
 import askName from '../src/cli.js';
 import {
   getRandomNumber, greetingsAsk, getUserAnswer, checkCorrectAnswer,
