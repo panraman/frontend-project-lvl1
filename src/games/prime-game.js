@@ -3,6 +3,9 @@ import commonLogic from '../index.js';
 const getRandomNumber = (min, max) => Math.trunc(Math.random() * (max - min) + min);
 
 const isPrime = (number) => {
+  if (number === 1) {
+    return false;
+  }
   for (let i = 2; i < number; i += 1) {
     if (number % i === 0) {
       return false;
