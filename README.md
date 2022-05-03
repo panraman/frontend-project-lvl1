@@ -8,13 +8,13 @@
 ![example workflow](https://github.com/panraman/frontend-project-lvl1/actions/workflows/makelint.yml/badge.svg)
 
 ### Brain-even:
-[![asciicast](https://asciinema.org/a/NyyEdBcEDDXhZo2ZGvEZEYHQ3.svg)](https://asciinema.org/a/NyyEdBcEDDXhZo2ZGvEZEYHQ3)
+[![asciicast](https://asciinema.org/a/uhsTqBxljJrhAm5hL4Q8YmHZ0.svg)](https://asciinema.org/a/uhsTqBxljJrhAm5hL4Q8YmHZ0)
 
 ### Brain-calc:
-[![asciicast](https://asciinema.org/a/FcU00DCcoHe1bNntTlk0nwjrD.svg)](https://asciinema.org/a/FcU00DCcoHe1bNntTlk0nwjrD)
+[![asciicast](https://asciinema.org/a/vRGsRPt2EEP5zn4sB1GjP9Xb2.svg)](https://asciinema.org/a/vRGsRPt2EEP5zn4sB1GjP9Xb2)
 
 ### Brain-gcd:
-[![asciicast](https://asciinema.org/a/m37qhcN9XFU9I71Ni9VsGeerl.svg)](https://asciinema.org/a/m37qhcN9XFU9I71Ni9VsGeerl)
+[![asciicast](https://asciinema.org/a/egCInaePwuyhuvr2ujPxUIdbP.svg)](https://asciinema.org/a/egCInaePwuyhuvr2ujPxUIdbP)
 
 ### Brain-progression:
 [![asciicast](https://asciinema.org/a/HqF6TpiXK9lZJXk5c7teHAPYZ.svg)](https://asciinema.org/a/HqF6TpiXK9lZJXk5c7teHAPYZ)
