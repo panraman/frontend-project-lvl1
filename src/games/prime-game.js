@@ -20,12 +20,7 @@ const startGame = () => {
     return randomNumber;
   };
 
-  const correctAnswer = (number) => {
-    if (isPrime(number) === true) {
-      return 'yes';
-    }
-    return 'no';
-  };
+  const correctAnswer = (number) => ((isPrime(number)) ? 'yes' : 'no');
 
   return commonLogic(task, question, correctAnswer);
 };

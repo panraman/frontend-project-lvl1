@@ -23,7 +23,7 @@ const commonLogic = (task, question, сorrectAnswer) => {
     const userAnswer = getUserAnswer();
     const correct = сorrectAnswer(expression);
     const compare = compareAnswers(userAnswer, correct);
-    if (compare === false) {
+    if (!compare) {
       return console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correct}'.\nLet's try again, ${username}!`);
     } console.log('Correct!');
   }

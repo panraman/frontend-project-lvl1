@@ -2,11 +2,7 @@ import commonLogic from '../index.js';
 
 const getRandomNumber = (min, max) => Math.trunc(Math.random() * (max - min) + min);
 
-const isEven = (num) => {
-  if (num % 2 === 0) {
-    return true;
-  } return false;
-};
+const isEven = (num) => ((num % 2 === 0));
 
 const startGame = () => {
   const task = 'Answer "yes" if the number is even, otherwise answer "no".';
@@ -15,12 +11,7 @@ const startGame = () => {
     return randomNumber;
   };
 
-  const correctAnswer = (number) => {
-    if (isEven(number) === true) {
-      return 'yes';
-    }
-    return 'no';
-  };
+  const correctAnswer = (number) => ((isEven(number) ? 'yes' : 'no'));
 
   return commonLogic(task, question, correctAnswer);
 };
