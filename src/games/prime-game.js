@@ -1,6 +1,5 @@
 import commonLogic from '../index.js';
-
-const getRandomNumber = (min, max) => Math.trunc(Math.random() * (max - min) + min);
+import getRandomNumber from '../randomizer.js';
 
 const isPrime = (number) => {
   if (number === 1) {
@@ -15,10 +14,7 @@ const isPrime = (number) => {
 
 const startGame = () => {
   const task = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-  const question = () => {
-    const randomNumber = getRandomNumber(1, 20);
-    return randomNumber;
-  };
+  const question = () => getRandomNumber(1, 20);
 
   const correctAnswer = (number) => ((isPrime(number)) ? 'yes' : 'no');
 

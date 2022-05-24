@@ -1,7 +1,6 @@
 /* eslint-disable no-eval */
 import commonLogic from '../index.js';
-
-const getRandomNumber = (min, max) => Math.trunc(Math.random() * (max - min) + min);
+import getRandomNumber from '../randomizer.js';
 
 const operators = ['*', '+', '-'];
 
