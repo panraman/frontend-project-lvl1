@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-syntax */
 /* eslint-disable no-param-reassign */
 import commonLogic from '../index.js';
 import getRandomNumber from '../randomizer.js';
@@ -27,7 +28,11 @@ const startGame = () => {
     const stepSkip = getRandomNumber(0, arrProgression.length);
     const trueAnswer = arrProgression[stepSkip];
     arrProgression[stepSkip] = '..';
-    result.push(arrProgression.toString());
+    let stringProgression = '';
+    for (const num of arrProgression) {
+      stringProgression += `${num} `;
+    }
+    result.push(stringProgression);
     result.push(trueAnswer.toString());
     return result;
   };
