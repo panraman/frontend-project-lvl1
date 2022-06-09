@@ -18,14 +18,8 @@ const largestDivisor = (num1, num2) => {
 
 const startGame = () => {
   const task = 'Find the greatest common divisor of given numbers.';
-  const question = () => {
-    const num1 = getRandomNumber(1, 30);
-    const num2 = getRandomNumber(1, 30);
-    const expression = `${num1} ${num2}`;
-    return expression;
-  };
 
-  const correctAnswer = (expression) => {
+  const correct = (expression) => {
     const getarr = expression.split(' ');
     const num1 = getarr[0];
     const num2 = getarr[1];
@@ -33,7 +27,18 @@ const startGame = () => {
     return String(result);
   };
 
-  return commonLogic(task, question, correctAnswer);
+  const getGameData = () => {
+    const result = [];
+    const num1 = getRandomNumber(1, 30);
+    const num2 = getRandomNumber(1, 30);
+    const question = `${num1} ${num2}`;
+    const correctAnswer = correct(question);
+    result.push(question.toString());
+    result.push(correctAnswer.toString());
+    return result;
+  };
+
+  return commonLogic(task, getGameData);
 };
 
 export default startGame;

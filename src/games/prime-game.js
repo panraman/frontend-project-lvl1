@@ -14,11 +14,17 @@ const isPrime = (number) => {
 
 const startGame = () => {
   const task = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-  const question = () => getRandomNumber(1, 20);
+  const getGameData = () => {
+    const result = [];
+    const question = getRandomNumber(1, 20);
+    const correct = (number) => ((isPrime(number)) ? 'yes' : 'no');
+    const correctAnswer = correct(question);
+    result.push(question.toString());
+    result.push(correctAnswer.toString());
+    return result;
+  };
 
-  const correctAnswer = (number) => ((isPrime(number)) ? 'yes' : 'no');
-
-  return commonLogic(task, question, correctAnswer);
+  return commonLogic(task, getGameData);
 };
 
 export default startGame;

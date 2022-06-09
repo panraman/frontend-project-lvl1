@@ -21,18 +21,18 @@ const startGame = () => {
     return sequenceArray;
   };
 
-  const arrProgression = sequence();
-  const stepSkip = getRandomNumber(0, arrProgression.length);
-  const trueAnswer = arrProgression[stepSkip];
-
-  const question = () => {
+  const getGameData = () => {
+    const result = [];
+    const arrProgression = sequence();
+    const stepSkip = getRandomNumber(0, arrProgression.length);
+    const trueAnswer = arrProgression[stepSkip];
     arrProgression[stepSkip] = '..';
-    return arrProgression.toString();
+    result.push(arrProgression.toString());
+    result.push(trueAnswer.toString());
+    return result;
   };
 
-  const correctAnswer = () => trueAnswer.toString();
-
-  return commonLogic(task, question, correctAnswer);
+  return commonLogic(task, getGameData);
 };
 
 export default startGame;
