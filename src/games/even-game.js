@@ -7,13 +7,10 @@ const startGame = () => {
   const task = 'Answer "yes" if the number is even, otherwise answer "no".';
 
   const getGameData = () => {
-    const result = [];
-    const question = getRandomNumber(1, 10);
+    const question = getRandomNumber(1, 10).toString();
     const correct = (number) => ((isEven(number) ? 'yes' : 'no'));
-    const correctAnswer = correct(question);
-    result.push(question.toString());
-    result.push(correctAnswer.toString());
-    return result;
+    const correctAnswer = correct(question).toString();
+    return [question, correctAnswer];
   };
 
   return commonLogic(task, getGameData);

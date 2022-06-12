@@ -28,14 +28,11 @@ const startGame = () => {
   };
 
   const getGameData = () => {
-    const result = [];
     const num1 = getRandomNumber(1, 30);
     const num2 = getRandomNumber(1, 30);
     const question = `${num1} ${num2}`;
     const correctAnswer = correct(question);
-    result.push(question.toString());
-    result.push(correctAnswer.toString());
-    return result;
+    return [question, correctAnswer];
   };
 
   return commonLogic(task, getGameData);
