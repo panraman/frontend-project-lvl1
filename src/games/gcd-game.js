@@ -19,19 +19,11 @@ const largestDivisor = (num1, num2) => {
 const startGame = () => {
   const task = 'Find the greatest common divisor of given numbers.';
 
-  const correct = (expression) => {
-    const getarr = expression.split(' ');
-    const num1 = getarr[0];
-    const num2 = getarr[1];
-    const result = largestDivisor(num1, num2);
-    return String(result);
-  };
-
   const getGameData = () => {
     const num1 = getRandomNumber(1, 30);
     const num2 = getRandomNumber(1, 30);
     const question = `${num1} ${num2}`;
-    const correctAnswer = correct(question);
+    const correctAnswer = String(largestDivisor(num1, num2));
     return [question, correctAnswer];
   };
 

@@ -1,13 +1,7 @@
-/* eslint-disable no-eval */
 import commonLogic from '../index.js';
 import getRandomNumber from '../randomizer.js';
 
 const operators = ['*', '+', '-'];
-
-const getRandomOperator = () => {
-  const i = getRandomNumber(0, 3);
-  return operators[i];
-};
 
 const startGame = () => {
   const task = 'What is the result of the expression?';
@@ -15,9 +9,9 @@ const startGame = () => {
   const getGameData = () => {
     const num1 = getRandomNumber(1, 10);
     const num2 = getRandomNumber(1, 10);
-    const operator = getRandomOperator();
+    const operator = operators[getRandomNumber(0, 3)];
     const question = `${num1} ${operator} ${num2}`;
-    const correct = () => {
+    const сalculateAnswer = () => {
       let result = 0;
       if (operator === '*') {
         result = num1 * num2;
@@ -30,7 +24,7 @@ const startGame = () => {
       }
       return result.toString();
     };
-    const correctAnswer = correct();
+    const correctAnswer = сalculateAnswer();
     return [question, correctAnswer];
   };
 

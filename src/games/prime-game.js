@@ -16,8 +16,8 @@ const startGame = () => {
   const task = 'Answer "yes" if given number is prime. Otherwise answer "no".';
   const getGameData = () => {
     const question = getRandomNumber(1, 20);
-    const correct = (number) => ((isPrime(number)) ? 'yes' : 'no');
-    const correctAnswer = correct(question);
+    const сalculateAnswer = (number) => ((isPrime(number)) ? 'yes' : 'no');
+    const correctAnswer = сalculateAnswer(question);
     return [question, correctAnswer];
   };
 

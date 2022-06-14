@@ -7,9 +7,9 @@ const startGame = () => {
   const task = 'Answer "yes" if the number is even, otherwise answer "no".';
 
   const getGameData = () => {
-    const question = getRandomNumber(1, 10).toString();
-    const correct = (number) => ((isEven(number) ? 'yes' : 'no'));
-    const correctAnswer = correct(question).toString();
+    const question = getRandomNumber(1, 10);
+    const сalculateAnswer = (number) => ((isEven(number) ? 'yes' : 'no'));
+    const correctAnswer = сalculateAnswer(question).toString();
     return [question, correctAnswer];
   };
 
