@@ -1,5 +1,5 @@
 import commonLogic from '../index.js';
-import getRandomNumber from '../randomizer.js';
+import getRandomNumber from '../helpers.js';
 
 const largestDivisor = (num1, num2) => {
   let divisor = 1;

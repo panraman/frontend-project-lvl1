@@ -1,5 +1,5 @@
 import commonLogic from '../index.js';
-import getRandomNumber from '../randomizer.js';
+import getRandomNumber from '../helpers.js';
 
 const makeSequenceArray = (beginNum, step, length) => {
   const arr = [];

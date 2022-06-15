@@ -1,5 +1,5 @@
 import commonLogic from '../index.js';
-import getRandomNumber from '../randomizer.js';
+import getRandomNumber from '../helpers.js';
 
 const isEven = (num) => (num % 2 === 0);
 
