@@ -5,7 +5,7 @@ const commonLogic = (task, getGameData) => {
   console.log('Welcome to the Brain Games!');
   const username = askName();
   console.log(`Hello, ${username}!\n${task}`);
-  for (let i = 0; i < 3; i += 1) {
+  for (let numberOfRepetitions = 0; numberOfRepetitions < 3; numberOfRepetitions += 1) {
     const [question, correctAnswer] = getGameData();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');

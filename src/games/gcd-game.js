@@ -1,7 +1,7 @@
 import commonLogic from '../index.js';
 import getRandomNumber from '../helpers.js';
 
-const largestDivisor = (num1, num2) => {
+const getLargestDivisor = (num1, num2) => {
   let divisor = 1;
   if (num1 % num2 === 0) {
     return num2;
@@ -23,7 +23,7 @@ const startGame = () => {
     const num1 = getRandomNumber(1, 30);
     const num2 = getRandomNumber(1, 30);
     const question = `${num1} ${num2}`;
-    const correctAnswer = String(largestDivisor(num1, num2));
+    const correctAnswer = String(getLargestDivisor(num1, num2));
     return [question, correctAnswer];
   };
 
